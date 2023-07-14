@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-font: #ffffff;
+  --primary-bg-color: #292929;
+  --secondary-bg-color: #121212;
+  --tertiary-bg-color: #383838;
+}
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: var(--primary-bg-color);
+}
+
+footer {
+  padding: 0.5rem;
+  margin: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: 'Inter';
+  color: var(--color-font);
+  background-color: var(--tertiary-bg-color);
+}
