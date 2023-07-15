@@ -3,13 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./icons/favicon.svg" type="image/x-icon" />
+    <link rel="icon" href="./icons/favicon.svg" type="image/x-icon" />
     <link rel="stylesheet" href="styles.css" />
     <script defer="defer" src="main.js"></script>
     <title>Weather</title>
   </head>
   <body>
-    <main></main>
+    <header>
+      <input type="text" name="city" placeholder="Enter city name..." />
+      <button>search</button>
+    </header>
+
+    <main>
+      <section class="forecast">
+        <div>
+          <img src="./icons/compass.svg" alt="img" width="50px" />
+          <p class="location">Visakhapatnam</p>
+        </div>
+        <img class="conditionIcon" src="./icons/conditions/308.svg" alt="img" />
+        <p class="temperature">17&deg</p>
+        <p class="conditionText">Blizzard</p>
+      </section>
+
+      <section class="highlights">
+        <div>
+          <p>sunrise</p>
+          <img src="./icons/sunrise.svg" alt="img" />
+          <p class="sunrise">05:30 AM</p>
+        </div>
+        <div>
+          <p>sunset</p>
+          <img src="./icons/sunset.svg" alt="img" />
+          <p class="sunset">06:35 AM</p>
+        </div>
+        <div>
+          <p>wind speed</p>
+          <img src="./icons/wind.svg" alt="img" />
+          <p class="windSpeed">24.1</p>
+        </div>
+        <div>
+          <p>humidity</p>
+          <img src="./icons/humidity.svg" alt="img" />
+          <p class="humidity">81</p>
+        </div>
+      </section>
+    </main>
+
     <footer>
       <p>Copyright © 2023 Mvlprem</p>
     </footer>
