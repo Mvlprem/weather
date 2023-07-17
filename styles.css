@@ -69,7 +69,7 @@ main {
   border-radius: 0.5rem;
   display: grid;
   grid-template-rows: auto 1fr auto auto;
-  background: url(./backgrounds/day.svg) 0 0 / cover no-repeat;
+  background: 0 0 / cover no-repeat;
 }
 .forecast > div {
   display: flex;
