@@ -57,6 +57,12 @@ header > p {
 
 /* Main styles */
 main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: var(--font-color);
@@ -134,11 +140,12 @@ footer {
 }
 
 /* Media queries */
-@media (width < 600px) {
+@media (width <= 1024px) {
   header > p {
     margin-top: 0.5rem;
   }
-  main {
+  main > div {
+    width: 100%;
     grid-template: repeat(2, 1fr) / 1fr;
   }
   .forecast,
@@ -153,5 +160,12 @@ footer {
   }
   .highlights img {
     height: 80px;
+  }
+}
+
+@media (width > 600px) {
+  main > div {
+    max-width: 70vw;
+    height: max-content;
   }
 }
